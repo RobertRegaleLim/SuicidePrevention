@@ -8,8 +8,20 @@
 		body{
 			background-color:#ccccff;
 		}
-		nav{
-			background-color: white;
+		.navigation{
+			background-color:orange;
+			display:flex;
+			justify-content:flex-end;
+			margin:0;
+		}
+		.navigation a{
+			text-decoration: none;
+			list-style: none;
+			color:black;
+			padding: 1em;
+		}
+		.navigation a:hover{
+			color:blue;
 		}
 		header{
 			text-align:center;
@@ -57,12 +69,12 @@
 		</div>
 	</center>
 	<header>
-		<nav>
-			<a href = "index.html">| Home |</a>
-			<a href = "menu2.html"> Statistics |</a>
-			<a href = "menu5.html"> How to prevent |</a>
-			<a href = "menu3.html"> About |</a>
-			<a href = "menu4.html"> Contact |</a>
+		<nav class="navigation">
+			<a href = "index.html">Home</a>
+			<a href = "menu2.html">Statistics</a>
+			<a href = "menu5.html">How to prevent</a>
+			<a href = "menu3.html">About</a>
+			<a href = "menu4.html">Contact</a>
 		</nav>
 	</header>
 
