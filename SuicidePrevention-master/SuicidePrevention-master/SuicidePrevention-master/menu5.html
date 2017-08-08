@@ -6,7 +6,7 @@
 
 	<style type="text/css">
 		body{
-			background-color:#ffccff;
+			margin:0;
 		}
 		header{
 			text-align:center;
@@ -15,31 +15,55 @@
 			width:100%;
 			font-size:18pt;
 		}
-		nav{
-		   background-color:white;
+		#roope{
+			display:flex;
+			justify-content: flex-start;
+			position: absolute;
 		}
+		.navigation{
+			background-color:orange;
+			display:flex;
+			justify-content:center;
+			margin:0;
+		}
+		.navigation a{
+			text-decoration: none;
+			list-style: none;
+			color:black;
+			padding: 1em;
+		}
+		.navigation a:hover{
+			color:blue;
+		}
+		@media all and (max-width: 750px) {
+			.navigation {
+			 	flex-flow: column wrap;
+			 	padding: 0;
+			}
+			.navigation a { 
+				text-align: center; 
+				padding: 10px;
+				border-top: 1px solid rgba(255,255,255,0.3); 
+				border-bottom: 1px solid rgba(0,0,0,0.1); 
+			}
+		}
+
 		h1{
 			text-align:center;
-		}
-		a{
-			
 		}
 	</style>
 </head>
 
 <body>
-	<center>
-	<div>
-		<h1>Suicide Prevention Group</h1>
-	</div>
-	</center>
 	<header>
-		<nav>
-			<a href = "index.html"> Home </a>
-			<a href = "menu2.html"> Statistics </a>
-			<a href = "menu5.html"> How to prevent </a>
-			<a href = "menu3.html"> About </a>
-			<a href = "menu4.html"> Contact </a>
+		<img src="rope.png" id="roope" width="70" height="70">
+		<nav class="navigation">
+
+			<a href = "index.html">Home</a>
+			<a href = "menu2.html">Statistics</a>
+			<a href = "menu5.html">How to prevent</a>
+			<a href = "menu3.html">About</a>
+			<a href = "menu4.html">Contact</a>
 		</nav>
 	</header>
 

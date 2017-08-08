@@ -2,50 +2,106 @@
 <html>
 
 <head>
-	<title>Index.html</title>
+	<title>Suicide Prevention</title>
 
 	<style type="text/css">
 		body{
-			background-color: red;
+			background:url("pills.jpeg");
+			background-repeat: no-repeat;
+			background-size:cover;
+			margin:0;
 		}
-		nav{
-			background-color: white;
+		.navigation{
+			display:flex;
+			justify-content:center;
+			margin:0;
+			background-color:#0099cc;
 		}
+		#roope{
+			display:flex;
+			justify-content: flex-start;
+			position: absolute;
+		}
+		.navigation a{
+			text-decoration: none;
+			list-style: none;
+			color:black;
+			padding: 1em;
+		}
+		.navigation a:hover{
+			background-color:#0066cc;
+		}
+		@media all and (max-width: 750px) {
+ 			.navigation {
+ 			  flex-flow: column wrap;
+ 			  padding: 0;
+ 			}
+ 			.navigation a { 
+ 			  text-align: center; 
+ 			  padding: 10px;
+ 			  border-top: 1px solid rgba(255,255,255,0.3); 
+ 			  border-bottom: 1px solid rgba(0,0,0,0.1); 
+ 			}
+ 		}
 		header{
 			text-align:center;
 			background-color:orange;
-			border:solid;
 			width:100%;
 			font-size:18pt;
 		}
-		#num{
+		h1{
 			text-align:center;
-			margin-top:5px;
-			border-style:dotted;
-			width:500px
 		}
+
+		h2{
+			font-size: 45px;
+			font-family: "times new roman";
+			text-align:center;
+		}
+		#Bod{
+			display:flex;
+			justify-content:space-between;
+			width:100%;
+		}
+		.info{
+			justify-content:flex-end;
+			text-align:left;
+			width:47%;
+			font-size:20pt;   
+		}
+
+		#B{display:flex;
+		   justify-content: center;}
+		#hns{
+			display:flex;
+			justify-content:center;
+			justify-content:space-around;
+		}
+
 	</style>
 </head>
 
 <body>
-<center>
-	<h1>Suicide Prevention Group</h1>
-</center>
 	<header>
-		<nav>
-			<a href = "index.html">| Home |</a>
-			<a href = "menu2.html"> | Statistics |</a>
-			<a href = "menu3.html"> | About |</a>
-			<a href = "menu4.1.html"> | Contact |</a>
+		<img src="rope.png" id="roope" width="70" height="70">
+		<nav class="navigation">
+			<a href = "index.html">Home</a>
+			<a href = "menu2.html">Statistics</a>
+			<a href = "menu3.html">About</a>
+			<a href = "menu4.html">Contact</a>
 		</nav>
 	</header>
-	<div id="num">
-		<p>
-			<a href="https://suicidepreventionlifeline.org/">National Suicide Prevention Lifeline</a><br>
-			 Call 1-800-273-8255<br>
-	    	 Available 24 hours everyday
-		</p>
+
+	<div>
+		<h1>Home</h1><hr>
 	</div>
+
+	<div id="hns"><img src="helpandsupport.png" width=700 height=500><img src="phone.gif" width=500 height=400></div>
+
+	<div ><h2>If you have a friend in need DONT WAIT.<br> Act now and you can save a life.</h2></div>
+
+
+
 </body>
 
 </html>
